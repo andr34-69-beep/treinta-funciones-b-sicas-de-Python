@@ -19,14 +19,22 @@ Reconocer y aplicar funciones básicas de Python para trabajar con datos, realiz
 
 
 Funciones 20 - 30
-## 20. Función `map()`
-
-**¿Qué hace?** Aplica una función a cada elemento de un iterable y devuelve un iterador con los resultados.
-
-**Sintaxis general:** `map()`
-
-
-**Ejemplo práctico:**
-precios = [1000, 2000, 3000]
-precios_con_iva = list(map(lambda precio: precio * 1.19, precios))
-print(precios_con_iva)
+   "## 20. Función `map()`\n",
+    "\n",
+    "**¿Qué hace?** Aplica una función a cada elemento de un iterable y devuelve un iterador con los resultados.\n",
+    "\n",
+    "**Sintaxis general:** `map()`\n",
+    "\n",
+    "**Ejemplo práctico:**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "82bcd2a8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "precios = [1000, 2000, 3000]\n",
+    "precios_con_iva = list(map(lambda precio: precio * 1.19, precios))\n",
+    "print(precios_con_iva)"
