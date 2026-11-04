@@ -1,4 +1,4 @@
-# treinta funciones basicas de Pyhon
+# TREINTA FUNCIONES BASICAS DE PYTHON
 este es un repositorio para investigar y documentar, al menos, treinta funciones básicas de Python, explicando su uso y proporcionando ejemplos prácticos.
 Cada función incluye descripción, utilidad, ejemplo ejecutable e interpretación del resultado
 
@@ -6,7 +6,7 @@ Cada función incluye descripción, utilidad, ejemplo ejecutable e interpretaci�
 Reconocer y aplicar funciones básicas de Python para trabajar con datos, realizar operaciones y manipular colecciones
 
 ## Contenido
-- `notebooks/30_Funciones_Basicas_Python.ipynb`: cuaderno Jupyter con la investigación y los ejemplos
+- cuaderno Jupyter con la investigación y los ejemplos
 
 ## Requisitos
 - Python
