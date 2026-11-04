@@ -1,14 +1,119 @@
-# 20. Función `map()`
+**Interpretación del resultado:** Combina cada nombre con la nota que ocupa la misma posición.
+ **Interpretación del resultado:** Combina cada nombre con la nota que ocupa la misma posición.
+## 20. Función `map()`
 
 **¿Qué hace?** Aplica una función a cada elemento de un iterable y devuelve un iterador con los resultados.
 
-**Sintaxis general:** `map(funcion, iterable)`
+**Sintaxis general:** `map()`
 
 **Ejemplo práctico:**
+precios = [1000, 2000, 3000]
+precios_con_iva = list(map(lambda precio: precio * 1.19, precios))
+print(precios_con_iva)
 
-```python
-numeros = [1, 2, 3, 4]
-cuadrados = map(lambda numero: numero ** 2, numeros)
+**Interpretación del resultado:** Calcula el 19 % adicional para cada precio y muestra la nueva lista.
+## 21. Función `filter()`
 
-print(list(cuadrados))  # [1, 4, 9, 16]
-```
+**¿Qué hace?** Devuelve un iterador con los elementos que cumplen una condición. La condición se expresa mediante una función que devuelve verdadero o falso.
+
+**Sintaxis general:** `filter()`
+
+**Ejemplo práctico:**
+numeros = [1, 2, 3, 4, 5, 6]
+pares = list(filter(lambda n: n % 2 == 0, numeros))
+print(pares)
+**Interpretación del resultado:** Filtra y muestra únicamente los números pares.
+## 22. Función `any()`
+
+**¿Qué hace?** Devuelve `True` si al menos un elemento del iterable es verdadero. Devuelve `False` si ninguno lo es o si está vacío.
+
+**Sintaxis general:** `any()`
+
+**Ejemplo práctico:**
+asistencias = [False, False, True, False]
+print(any(asistencias))
+**Interpretación del resultado:** Muestra `True` porque existe al menos una asistencia verdadera.
+## 23. Función `all()`
+
+**¿Qué hace?** Devuelve `True` si todos los elementos del iterable son verdaderos. Si alguno es falso, devuelve `False`.
+
+**Sintaxis general:** `all()`
+
+**Ejemplo práctico:**
+requisitos = [True, True, True]
+print(all(requisitos))
+**Interpretación del resultado:** Muestra `True` porque todos los requisitos se cumplen.
+## 24. Función `list()`
+
+**¿Qué hace?** Crea una lista. También puede convertir otros iterables, como cadenas o tuplas, en listas.
+
+**Sintaxis general:** `list()`
+
+**Ejemplo práctico:**
+vocales = list('aeiou')
+print(vocales)
+**Interpretación del resultado:** Convierte la cadena en una lista con cinco caracteres.
+## 25. Función `tuple()`
+
+**¿Qué hace?** Crea una tupla, una colección ordenada que normalmente no se modifica después de creada.
+
+**Sintaxis general:** `tuple()`
+
+**Ejemplo práctico:**
+coordenadas = tuple([4, 7])
+print(coordenadas)
+print(type(coordenadas))
+**Interpretación del resultado:** Muestra `(4, 7)` y el tipo `tuple`.
+## 26. Función `set()`
+
+**¿Qué hace?** Crea un conjunto, una colección sin elementos duplicados. No garantiza un orden específico al mostrar sus elementos.
+
+**Sintaxis general:** `set()`
+
+**Ejemplo práctico:**
+codigos = [101, 102, 101, 103, 102]
+unicos = set(codigos)
+print(unicos)
+print(len(unicos))
+**Interpretación del resultado:** Elimina duplicados; quedan tres códigos únicos. El orden de visualización puede variar.
+## 27. Función `dict()`
+
+**¿Qué hace?** Crea un diccionario de pares clave-valor. Permite consultar información mediante una clave.
+
+**Sintaxis general:** `dict()`
+
+**Ejemplo práctico:**
+estudiante = dict(nombre='Camila', edad=21, carrera='Sistemas')
+print(estudiante)
+print(estudiante['nombre'])
+**Interpretación del resultado:** Crea un diccionario y consulta el valor asociado a la clave `nombre`.
+## 28. Función `help()`
+
+**¿Qué hace?** Muestra la documentación de ayuda de un objeto o función. En un cuaderno puede generar una salida extensa.
+
+**Sintaxis general:** `help()`
+
+**Ejemplo práctico:**
+help(len)
+**Interpretación del resultado:** Presenta la descripción, parámetros y comportamiento de la función `len()`.
+## 29. Función `isinstance()`
+
+**¿Qué hace?** Comprueba si un objeto pertenece a un tipo o clase determinada. Devuelve un booleano.
+
+**Sintaxis general:** `isinstance()`
+
+**Ejemplo práctico:**
+edad = 19
+print(isinstance(edad, int))
+print(isinstance(edad, str))
+**Interpretación del resultado:** Muestra `True` para `int` y `False` para `str`.
+## 30. Función `divmod()`
+
+**¿Qué hace?** Recibe dos números y devuelve una tupla con el cociente entero y el residuo de la división.
+
+**Sintaxis general:** `divmod()`
+
+**Ejemplo práctico:**
+cociente, residuo = divmod(17, 5)
+print('Cociente:', cociente)
+print('Residuo:', residuo)
