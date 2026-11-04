@@ -1,0 +1,15 @@
+## 20. Función `map()`
+
+**¿Qué hace?** Aplica una función a cada elemento de un iterable y devuelve un iterador con los resultados.
+
+**Sintaxis general:** `map(funcion, iterable)`
+
+**Ejemplo práctico:**
+
+```python
+numeros = [1, 2, 3, 4]
+cuadrados = map(lambda numero: numero ** 2, numeros)
+
+print(list(cuadrados))  # [1, 4, 9, 16]
+```
+
